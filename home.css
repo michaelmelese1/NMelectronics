@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* Header */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    height: 150px;
+}
+.nav-logo img{
+    height: 153px;
+    width: 150px;
+}
+.nav-link ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    gap:150px;
+    padding-right: 100px;
+    list-style:none;
+}
+.nav-link a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+}
+.nav-link a:hover{
+    color: blue;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    height:500px;
+}
+
+.left{
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.left h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.left h2{
+    font-size:60px;
+}
+
+.blue{
+    color:#1e88ff;
+    font-weight:bold;
+}
+
+.right{
+    width:55%;
+}
+
+.right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Banner */
+
+.banner{
+    display:flex;
+    background:#eef2f7;
+    padding:50px;
+    align-items:center;
+}
+
+.text{
+    width:45%;
+}
+
+.text h1{
+    color:white;
+    font-size:70px;
+}
+
+.text h2{
+    color:#1e88ff;
+    font-size:60px;
+}
+
+.text h3{
+    color:#5aa9ff;
+    font-size:60px;
+}
+
+button{
+    margin-top:30px;
+    padding:18px 40px;
+    border:none;
+    border-radius:10px;
+    background:#4da6ff;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e88ff;
+}
+
+.image{
+    width:55%;
+}
+
+.image img{
+    width:100%;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: white;
+}
+.footer h4{
+    color: #007bff;
+}
+.socials{
+    padding-bottom: px;
+}
+.footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.footer a:hover{
+    font-size: 20px;
+    color: lightskyblue;
+}
+.footer-right{
+    padding-right: 50px;
+}
+.here{
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    padding-left: 50px;
+}
