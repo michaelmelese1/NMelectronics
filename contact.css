@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+
     background-color:black;
     height: 150px;
 }
@@ -20,8 +20,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    gap:150px;
-    padding-right: 100px;
+    gap:130px;
     list-style:none;
 }
 .nav-link a{
@@ -41,7 +40,9 @@ body{
     justify-content: space-around;
    
 }
-
+#git{
+    color: orange;
+}
 .image img{
     height: 300px;
     width: 600px;
