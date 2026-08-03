@@ -134,21 +134,19 @@ body{
     height: 400px;
     width: 400px;
     padding-left: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 30px;
 }
 .last-section h2{
     color: #008cff;
     font-size: 40px;
-    padding-bottom: 100px;
     padding-left: 70px;
+    padding-bottom: 60px;
 } 
 .Quality {
     font-size: 40px;
-    padding-top: 7px;
-    margin-top: 18px;
+    margin-top: ;
 }
 .Quality h3 {
-    padding-top: 0px;
     font-size: 30px;
     padding-left: 140px;
 
@@ -157,7 +155,7 @@ body{
     color: black;
     font-size: 26px;
     padding-left: 150px;
-    padding-bottom: 50PX;
+    padding-bottom: 0PX;
     margin-top: 5%;
 }
 #lastpic{
