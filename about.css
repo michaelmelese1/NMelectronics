@@ -49,7 +49,7 @@ body{
 .text::before{
   content: "";
   position: absolute;
-  left: 35px;
+  left: 30px;
   top: 52%;
   transform: translateY(-50%); 
   width: 4px;  
@@ -66,18 +66,18 @@ body{
 .image::before{
  content: "";
   position: absolute;
-  left: -90px;
+  left: -110px;
   top: 55%;
-  transform: translateY(-50%); 
+  transform: translateY(-55%); 
   width: 5px;  
-  height: 89%;  
+  height: 90%;  
   background-color: #007bff; 
   border-radius: 2px;
 }
 .image img{
     width: 700px;
     height: 400px;
-    
+
 }
  
 .split-section{
@@ -144,13 +144,15 @@ body{
 } 
 .Quality {
     font-size: 40px;
-    margin-top: ;
+    margin-top: 20px;
+
 }
 .Quality h3 {
     font-size: 30px;
     padding-left: 140px;
-
 }
+
+
 #add{
     color: black;
     font-size: 26px;

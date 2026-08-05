@@ -59,6 +59,7 @@ body{
 }
 .card p{
     font-size: 50px;
+    font-family: initial;
    
 }
 .location{
