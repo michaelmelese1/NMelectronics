@@ -61,9 +61,8 @@ body{
     box-shadow: 2px 2px 5px black;
 }
 .card:hover{
-     transition:0.3s;
-    height: 465px;
-    width: 320px;
+    transition:0.3s;
+    scale: 1.0;
     transform:scale(1.05);
     box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
@@ -82,7 +81,6 @@ body{
     font-size: 50px;
     color:white;
     font-weight: bold;
-    font-style: oblique;
 }
 .card-section h3{
     color: #007bff;
