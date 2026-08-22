@@ -133,6 +133,10 @@ body{
     border-radius:6px;
     cursor:pointer;
 }
+.card button a{
+    text-decoration: none;
+    color: white;
+}
 
 .card button:hover{
     background:#005fa3;
