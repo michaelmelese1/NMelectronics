@@ -113,7 +113,7 @@ body{
     font-size:60px;
 }
 
-button{
+.shop{
     margin-top:30px;
     padding:18px 40px;
     border:none;
@@ -122,8 +122,14 @@ button{
     color:white;
     font-size:22px;
     cursor:pointer;
+    text-decoration: none;
 }
 
+.shop a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 button:hover{
     background:#1e88ff;
 }
@@ -134,24 +140,6 @@ button:hover{
 
 .image img{
     width:100%;
-}
-.footer{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    height: 160px;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer p{
-    color: white;
-}
-.footer h4{
-    color: #007bff;
-}
-.socials{
-    padding-bottom: px;
 }
 .features{
     width:100%;
@@ -189,6 +177,24 @@ button:hover{
     font-size:16px;
 }
 
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: white;
+}
+.footer h4{
+    color: #007bff;
+}
+.socials{
+    padding-bottom: px;
+}
 .footer a{
     list-style: none;
     text-decoration: none;
@@ -206,7 +212,4 @@ button:hover{
     font-size: 20px;
     padding: 10px 10px 10px 10px;
     padding-left: 50px;
-}
-.follow{
-    padding-bottom:20px ;
 }

@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:lightgray ;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:black;
+    height: 150px;
+}
+.nav-logo img{
+    height: 153px;
+    width: 150px;
+}
+.nav-link ul{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap:130px;    
+    list-style:none;
+}
+.nav-link a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+}
+.nav-link a:hover{
+    color: #008cff;
+}
+#git{
+    color: orange;
+}
