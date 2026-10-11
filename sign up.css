@@ -1,33 +1,40 @@
 body{
     background-color: aliceblue;
-    padding: 0%;
+    padding:0;
+    margin:0;
+    font-family:Arial, sans-serif;
+    box-sizing:border-box;
 
 }
+*, *::before, *::after{box-sizing:inherit;}
 .navbar{
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
-    width: 1430px;
+    min-height:120px;
+    width:100%;
+    padding:8px clamp(16px, 4vw, 48px);
+    background:black;
 }
 .nav-logo img{
-    height: 153px;
-    width: 250px;
+    display:block;
+    height:120px;
+    width:120px;
+    object-fit:contain;
 }
 .nav-link ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
-    gap:50px;    
+    flex-wrap:wrap;
+    align-items:center;
+    gap:clamp(16px, 3vw, 42px);
     list-style:none;
 }
 .nav-link a{
     text-decoration: none;
     list-style: none;
-    color: #1e88ff;
-    font-size: 30px;
+    color:white;
+    font-size:clamp(16px, 1.8vw, 22px);
 }
 .nav-link a:hover{
     color: #008cff;
@@ -37,35 +44,40 @@ body{
 }
 .split1 h1{
     color: rgb(0, 123, 255);
-    font-size: 90px;
-    padding-left: -10px;
-    padding-bottom: 80px;
+    font-size:clamp(38px, 5vw, 64px);
+    padding-bottom:24px;
 }
 .split1 h2{
-    padding-left: 30px;
+    padding-left:0;
    
 }
 .split1 p{
-    font-size: 20px;
+    font-size:clamp(16px, 1.8vw, 19px);
+    line-height:1.6;
 }
 #split-img{
     width: 200px;
     height: 100px;
-    padding-bottom: 100px;
+    padding-bottom:24px;
 }
 .split1{
-    padding-left: 80px;
+    flex:1 1 340px;
+    padding:24px;
 }
 .signUp-form{
     display: flex;
-    flex-direction:row ;
+    flex-wrap:wrap;
+    flex-direction:row;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 70px;
+    justify-content:space-evenly;
+    gap:32px;
+    max-width:1200px;
+    margin:0 auto;
+    padding:clamp(32px, 5vw, 64px) 24px;
    
 }
 .copyright{
-    padding-top: 150px;
+    padding-top:clamp(24px, 8vw, 90px);
 }
 .signupform h2{
 
@@ -77,7 +89,10 @@ body{
 .card{
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(16px, 3vw, 36px);
+    width:100%;
 }
 .card img{
     padding-top: 15px;
@@ -93,10 +108,13 @@ body{
     align-items: center;
     justify-content: center;
     background-color: white;
-    width: 500px;
-    height: 730px;
-    gap: 40px;
-    padding-bottom: 90px;
+    width:min(100%, 500px);
+    min-height:650px;
+    height:auto;
+    gap:24px;
+    padding:32px clamp(18px, 4vw, 40px);
+    border-radius:16px;
+    box-shadow:0 12px 32px rgba(0,0,0,.12);
 }
 
 .small-box{
@@ -117,35 +135,34 @@ body{
     background:#1e88ff;
 }
 #fullname{
-  width: 300px;
+    width:min(100%, 300px);
   border: 0px;
   border-bottom:solid 2px gray;
 }
 .email{
-  width: 300px;
+    width:min(100%, 300px);
   border: 0px;
   border-bottom:solid 2px gray;
 }
 #username{
-  width: 300px;
+    width:min(100%, 300px);
   border: 0px;
   border-bottom:solid 2px gray;
 
 }
 #password{
-  width: 300px;  
+    width:min(100%, 300px);
   border: 0px;
   border-bottom:solid 2px gray;
 
 }
 #confirmpassword{
-  width: 300px;
+    width:min(100%, 300px);
   border: 0px;
   border-bottom:solid 2px gray;
 
 }
 .login-link{
-    padding-left: 65px;
     text-decoration: none;
 }
 .login-link:hover{
@@ -176,7 +193,6 @@ body{
     font-size: 15px;
 }
 .footer a:hover{
-    font-size: 20px;
     color: lightskyblue;
 }
 .footer-right{
@@ -186,4 +202,31 @@ body{
     font-size: 20px;
     padding: 10px 10px 10px 10px;
     padding-left: 50px;
+}
+
+@media (max-width: 900px){
+    .navbar{justify-content:center; gap:0 24px; padding:8px 20px 18px;}
+    .nav-logo img{height:90px; width:90px;}
+    .nav-link ul{justify-content:center; gap:12px 24px;}
+    .signUp-form{justify-content:center;}
+    .split1{flex-basis:300px;}
+}
+
+@media (max-width: 600px){
+    .navbar{flex-direction:column; gap:8px; padding:10px 14px 18px;}
+    .nav-logo img{height:76px; width:76px;}
+    .nav-link{width:100%;}
+    .nav-link ul{justify-content:center; gap:10px 18px;}
+    .nav-link a{font-size:16px;}
+    .signUp-form{flex-direction:column; align-items:stretch; gap:20px; padding:28px 16px;}
+    .split1{padding:16px 8px;}
+    .split1 h1{padding-bottom:16px;}
+    .split1 p br{display:none;}
+    .copyright{padding-top:20px;}
+    .signupform{min-height:0; gap:20px; padding:24px 16px;}
+    .signupform h2{font-size:clamp(36px, 10vw, 56px);}
+    .card{gap:16px;}
+    .card img{width:72px; height:64px; object-fit:contain;}
+    .card p{font-size:14px;}
+    .signupform input{max-width:100%;}
 }
